@@ -3,8 +3,8 @@ project(custom_ops)
 
 find_package(Torch REQUIRED)
 
-add_executable(torchscript torchscript.cpp)
+add_executable(app torch_model_deployment.cpp)
 
-target_link_libraries(torchscript "${TORCH_LIBRARIES}")
+target_link_libraries(app "${TORCH_LIBRARIES}")
 
-set_property(TARGET torchscript PROPERTY CXX_STANDARD 17)
+set_property(TARGET app PROPERTY CXX_STANDARD 17)
