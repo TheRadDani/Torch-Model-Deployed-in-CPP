@@ -34,3 +34,4 @@ app
 build/
 *.pt
 __pycache__
+../.vscode/
